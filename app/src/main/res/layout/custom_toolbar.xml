@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_alignParentTop="true"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/linear_back"
+        android:gravity="center"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:minWidth="0dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_marginRight="6dp"
+            android:layout_height="wrap_content"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:textColor="@android:color/white"
+            android:text="Back"
+            style="@style/font_style"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/font_style"
+        android:ellipsize="end"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:layout_toRightOf="@id/linear_back"
+        android:layout_toLeftOf="@id/linear_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/linear_right"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+</RelativeLayout>

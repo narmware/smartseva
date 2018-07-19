@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Smart Seva</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_bottom">BottomActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="dummy_desc">Cleaner Responsibilities. Include: Cleaning,stocking and supplying designated
+        facility areas Carry out heavy cleaning tasks and special projects.Cleaner Responsibilities. Include:
+        Cleaning,stocking and supplying designated facility areas Carry out heavy cleaning tasks and special projects.</string>
+
+    <string name="sign_up">Register Now</string>
+    <string name="sign_in">Verify</string>
+    <string name="already_have_ac">Already have an account?</string>
+    <string name="dont_have_have_ac">Do not have an account?</string>
+</resources>

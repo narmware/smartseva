@@ -1,0 +1,104 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.narmware.smartseva.fragment.AddressFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_above="@id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_dt_title"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            style="@style/font_style"
+            android:text="Where do you need the service ?"
+            android:layout_margin="20dp"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/lin_btn"
+            android:layout_below="@id/txt_dt_title"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_home"
+                android:text="Home"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/indigo_700"
+                android:background="@drawable/button_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_office"
+                android:text="Office"
+                android:foreground="?attr/selectableItemBackground"
+                android:textColor="@color/grey_500"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:background="@drawable/button_deselect"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_home"
+            android:layout_below="@id/lin_btn"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/content_home_address"></include>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_office"
+            android:visibility="invisible"
+            android:layout_below="@+id/lin_btn"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/content_office_address"></include>
+        </LinearLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:elevation="5dp"
+            android:visibility="invisible"
+            android:background="@drawable/button_next"
+            android:textColor="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</FrameLayout>

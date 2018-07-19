@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btn_close"
+            app:srcCompat="@drawable/ic_close"
+            android:padding="5dp"
+            android:elevation="10dp"
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#51000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <ImageView
+                    android:id="@+id/img_blurr"
+                    android:background="@color/colorPrimary"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"/>
+
+                <ImageView
+                    android:id="@+id/img_service"
+                    android:elevation="5dp"
+                    app:layout_anchor="@+id/img_blurr"
+                    app:layout_anchorGravity="bottom|center"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp" />
+
+            </android.support.design.widget.CoordinatorLayout>
+
+            <LinearLayout
+                android:padding="4dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <include layout="@layout/price_dialog_content"></include>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

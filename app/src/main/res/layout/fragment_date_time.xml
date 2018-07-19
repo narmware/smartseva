@@ -1,0 +1,133 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.narmware.smartseva.fragment.DateTimeFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rltv_top"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+        <ImageView
+            android:id="@+id/img_serv"
+            android:transitionName="MyTransition"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/txt_serv_name"
+            style="@style/font_style"
+            android:text="Hello"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_alignParentBottom="true"
+            android:background="#51000000"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:gravity="bottom|center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/rltv_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_dt_title"
+                style="@style/font_style"
+                android:editable="false"
+                android:text="Schedule your service"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_below="@id/txt_dt_title"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_margin="10dp"
+                    android:background="@drawable/txt_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/edt_date"
+                        style="@style/font_style"
+                        android:hint="Date"
+                        android:padding="10dp"
+                        android:textSize="18sp"
+                        android:layout_toLeftOf="@id/img_date"
+                        android:textColor="@color/grey_800"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ImageButton
+                        android:id="@+id/img_date"
+                        android:background="@android:color/transparent"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/ic_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_margin="10dp"
+                    android:background="@drawable/txt_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/edt_time"
+                        style="@style/font_style"
+                        android:editable="false"
+                        android:hint="Time"
+                        android:textSize="18sp"
+                        android:layout_toLeftOf="@id/img_time"
+                        android:padding="10dp"
+                        android:textColor="@color/grey_800"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ImageButton
+                        android:id="@+id/img_time"
+                        android:background="@android:color/transparent"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/ic_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/card_img"
+            app:cardCornerRadius="3dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/img_serv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_below="@+id/card_img"
+            style="@style/font_style"
+            android:id="@+id/txt_serv_name"
+            android:text="Service Title"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@android:color/black"
+            android:background="@android:color/transparent"
+            android:layout_alignParentBottom="true"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</RelativeLayout>

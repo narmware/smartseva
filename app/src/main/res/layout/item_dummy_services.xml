@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        app:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <RelativeLayout
+            android:background="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rel_title3"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Recommended Services"
+                    style="@style/font_style"
+                    android:id="@+id/txt_title3"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey_900"
+                    android:textSize="18dp"
+                    android:layout_toLeftOf="@id/btn_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+              <!--  <Button
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_centerVertical="true"
+                    style="@style/font_style"
+                    android:id="@+id/btn_more"
+                    android:text="View More"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />-->
+
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@id/rel_title3"
+                android:layout_marginTop="10dp"
+                android:id="@+id/recycler_view_recom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/inv_linear1"
+                android:visibility="invisible"
+                android:layout_below="@id/rel_title3"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+            <com.wang.avi.AVLoadingIndicatorView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:indicatorName="BallSpinFadeLoaderIndicator"
+                app:indicatorColor="@color/colorAccent"
+                />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

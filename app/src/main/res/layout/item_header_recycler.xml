@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:id="@+id/img_linear"
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="60dp">
+            <ImageView
+                android:id="@+id/img_serv"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+        </LinearLayout>
+        <TextView
+            style="@style/font_style"
+            android:layout_below="@id/img_linear"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/txt_serv_name"
+            android:text="Service Title"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:padding="8dp"
+            android:textColor="@android:color/black"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>
